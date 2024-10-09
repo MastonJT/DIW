@@ -1,0 +1,103 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, h2{
+    margin: 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cta-container{
+    align-items: center;
+    background-image: url('FondoFondoFondo.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.cta-button{
+    background-color: #626bb2;
+    color: white;
+    padding: 15px 30px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    transition-duration: .5s;
+}
+.cta-button:hover{
+    transform: scale(1.2);
+    transition-duration: .5s;
+}
+
+#menuContainer{
+    width: 100%;
+}
+
+#menu{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.elementoMenu{
+    float: right;
+    border-right: 1px solid #336699;
+    width: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 5px;
+    transition-duration: 0.25s;
+}
+
+.elementoMenu:nth-last-child{
+    border-right: none;
+}
+
+.elementoMenu:hover{
+    background-color: #336699;
+    transition-duration: 0.25s;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.crumb{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .5em;
+    text-decoration: none;
+    color: #0095eb;
+    font-weight: bold;
+}
+
+.crumb:hover{
+    color: #006196;
+    text-decoration: underline;
+}
+
+#right{
+    float: right;
+}
+
+#left{
+    float: left;
+}
+
