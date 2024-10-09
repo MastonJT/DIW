@@ -1,0 +1,119 @@
+#colores-fondos h2{
+    color: red;
+}
+
+#colores-fondos p{
+    background-color: red;
+    opacity: 50%;
+}
+
+#tipografia h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#tipografia h3{
+    font-size: 0.5rem;
+}
+
+#tipografia p{
+    font-weight: bold;
+    line-height: 200%;
+}
+
+#espaciado {
+    margin: 1rem;
+    padding: 0;
+}
+
+#espaciado ul{
+    text-align: center;
+}
+
+#bordes-sombras div{
+    border: 4px dotted olive;
+    border-radius: 10px;
+    box-shadow:  10px 10px slateblue;
+}
+
+#posicionamiento{
+    position: relative;
+}
+
+#posicionamiento footer{
+    position: absolute;
+}
+
+#productos ul{
+    list-style-type:circle;
+    list-style-position: outside;
+}
+
+#productos img{
+    width: 2rem;
+}
+
+#botones button{
+    background-color: olive;
+    color: greenyellow;
+    border: 2px solid greenyellow;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#botones button:hover{
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 2s;
+    background-color: greenyellow;
+    color: olive;
+    border: 2px solid olive;
+}
+
+#tablas table,tr,th,td{
+    border: 1px solid cyan;
+    border-collapse: collapse;
+    padding: 0;
+    text-align: center;
+}
+
+#contenedor h2{
+    padding: 2rem;
+}
+
+#contenedor p{
+    margin: 2rem;
+}
+
+#imagenes img{
+    src: url('/Image.jpg');
+}
+
+#formulario form{
+    border: 2px solid olive;
+    font-size: 1.25rem;
+}
+
+#enlaces a{
+    color: purple;
+    text-decoration: none;
+}
+
+#enlaces a:hover{
+    color: blue;
+}
+
+#efectos-texto h2{
+    color: orangered;
+    text-shadow: 5px 5px goldenrod;
+}
+
+#efectos-texto h3{
+    text-transform: capitalize;
+}
+
+#efectos-texto p{
+    letter-spacing: 2em;
+}
+
+#contenedor .elemento{
+    display: inline;
+}
