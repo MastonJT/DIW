@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 7fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.celda1{
+    background-color: white;
+}
+
+.celda2{
+    background-color: yellow;
+}
+
+.celda3{
+    background-color: cyan;
+}
+
+.celda4{
+    background-color: green;
+}
+
+.celda5{
+    background-color: magenta;
+}
+
+.celda6{
+    background-color: red;
+}
+.celda7{
+    background-color: blue;
+}
+
+.celda11{
+    background-color: blue;
+}
+
+.celda22{
+    background-color: black;
+}
+
+.celda33{
+    background-color: magenta;
+}
+
+.celda44{
+    background-color: black;
+}
+
+.celda55{
+    background-color: cyan;
+}
+
+.celda66{
+    background-color: black;
+}
+.celda77{
+    background-color: white;
+}
