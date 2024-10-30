@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --fuentePrincipal: "Roboto", sans-serif;
+    --colorFuenteBlanco: aliceblue;
+    --colorFondo: #1d202b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuentePrincipal);
+}
+
+body {
+    background-color: var(--colorFondo);
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor-conciertos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .contenedor {
+        margin: 2rem 3rem 0rem 3rem;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor-conciertos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contenedor {
+        margin: 2rem 3rem 0rem 3rem;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .contenedor-conciertos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .contenedor {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 1rem;
+        margin: auto;
+        margin-top: 3rem;
+        padding: 0 3rem;
+    }
+}
+
+.card {
+    min-height: 200px;
+    padding: 1rem;
+    color: var(--colorFuenteBlanco);
+    font-weight: bolder;
+    background-size: cover;
+}
+
+.borde10px {
+    border-radius: 10px;
+}
+
+.banner {
+    min-height: 400px;
+    padding: 1rem;
+    color: var(--colorFuenteBlanco);
+    font-weight: bolder;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    text-align: center;
+}
+
+.h3banner {
+    align-self: center;
+}
+
+.ulbanner {
+    padding-top: none;
+    list-style-type: none;
+}
+
+li {
+    padding: 0.5rem 0;
+}
+
+.boton {
+    margin: .1rem 3rem;
+    max-height: 4rem;
+    min-height: 3rem;
+    min-width: fit-content;
+    padding: 0 1rem;
+    background-color: #fed700;
+    border: none;
+    font-weight: bolder;
+    align-self: center;
+}
+
+
+.textos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#card1 {
+    background-image: url('../img/1.jpg');
+}
+
+#card2 {
+    background-image: url('../img/2.jpg');
+}
+
+#card3 {
+    background-image: url('../img/3.jpg');
+}
+
+#card4 {
+    background-image: url('../img/4.jpg');
+}
+
+#card5 {
+    background-image: url('../img/5.jpg');
+}
+
+#card6 {
+    background-image: url('../img/6.jpg');
+}
+
+.banner {
+    background-image: url('../img/banner.jpg');
+}
