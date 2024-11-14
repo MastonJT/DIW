@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UT3</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&icon_names='home,refresh,arrow_back,menu,settings'"
+      rel="stylesheet"
+    />
+    <style>
+      #img1 {
+        width: 800px;
+        height: 600px;
+      }
+      img {
+        max-width: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ej1.1</h1>
+    <figure>
+      <img id="img1" class="general" src="./img/cato.avif" alt="1" />
+      <figcaption>imagen 800*600</figcaption>
+    </figure>
+    <h1>Ej1.2</h1>
+    <picture>
+      <source srcset="./img/imgwe.webp" alt="2" />
+      <source srcset="./img/gatopj.jpeg" alt="3" />
+      <img id="img4" class="general" src="./img/penege.png" alt="4" />
+    </picture>
+    <h1>Ej1.3</h1>
+    <picture>
+      <source media="(max-width:350px)" srcset="./img/imgwe.webp" alt="2" />
+      <source media="(min-width:351px) and (max-width:1024)" srcset="./img/gatopj.jpeg" alt="3" />
+      <source media="(min-width:1025px)" srcset="./img/gatopj.jpeg" alt="3" />
+      <img id="img4" class="general" src="./img/penege.png" alt="4" />
+    </picture>
+    <h1>Ej2.1</h1>
+    <svg width="200" height="200">
+      <circle cx="100" cy="100" r="20" style="fill: bisque" />
+    </svg>
+    <h1>Ej2.2</h1>
+    <svg width="200" height="200">
+      <circle cx="100" cy="100" r="20" stroke="green" stroke-width="4" fill="red" />
+    </svg>
+    <h1>Ej2.3</h1>
+    <svg width="200" height="200">
+      <rect x="50" y="100" width="100" height="40" style="fill: blue" />
+    </svg>
+    <h1>Ej2.4</h1>
+    <svg width="200" height="200">
+      <line x1="0" y1="0" x2="200" y2="200" stroke="yellow" stroke-width="2" />
+    </svg>
+    <h1>Ej2.5</h1>
+    <svg width="400" height="350">
+      <polygon points="200,0 50,150 100,350 300,350 350,150 200,0" style="fill: olivedrab" />
+    </svg>
+    <h1>Ej2.6</h1>
+    <svg width="500" height="500">
+      <polyline points="0,0 500,166 0,250 500,332 0,500" stroke="brown" stroke-width="3" fill="none" />
+    </svg>
+    <h1>Ej2.7</h1>
+    <svg width="300" height="150">
+      <ellipse cx="150" cy="75" rx="150" ry="75" style="fill: blue" />
+      <rect x="75" y="0" width="150" height="150" style="fill: green" />
+      <circle cx="150" cy="75" r="75" style="fill: red" />
+    </svg>
+    <h1>Ej2.8</h1>
+    <svg width="300" height="150">
+      <rect x="0" y="0" width="300" height="150" style="fill: aquamarine" />
+      <text x="150" y="75" style="fill: red">Hola</text>
+    </svg>
+    <h1>Ej2.9</h1>
+    <svg width="250" height="150">
+      <text x="0" y="150" style="fill: greenyellow" transform="rotate(-36.87 10,125)">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam voluptate iure quod tempore ab autem rerum
+        reiciendis minima reprehenderit laudantium iusto voluptas placeat et qui, dolores porro, impedit amet!
+      </text>
+    </svg>
+    <h1>Ej2.10</h1>
+    <svg width="200" height="200">
+      <circle cx="100" cy="100" r="100" style="fill: red" />
+      <circle cx="66" cy="66" r="30" style="fill: orange" />
+      <circle cx="132" cy="66" r="30" style="fill: orange" />
+      <rect x="75" y="132" width="50" height="25" style="fill: aqua" />
+      <polyline points="100,100 110,125 90,125 100,100" style="stroke: yellow; fill: none" />
+    </svg>
+    <h1>Ej3</h1>
+    <span class="material-icons">arrow_back</span>
+    <span class="material-icons">refresh</span>
+    <span class="material-icons">home</span>
+    <span class="material-icons">menu</span>
+    <span class="material-icons">settings</span>
+  </body>
+</html>
