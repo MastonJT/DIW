@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios Formularios</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form action="">
+      <label for="nom"
+        >Nombre <input pattern="^[a-zA-Z\s]+$" name="input3" id="nom" type="text" placeholder="Escribe tu usuario"
+      /></label>
+      <label for="pass"
+        >Password
+        <input
+          required
+          minlength="8"
+          name="input2"
+          type="password"
+          name=""
+          id="pass"
+          placeholder="titular de la consulta"
+      /></label>
+      <label for="email"
+        >Email <input id="email" required name="input1" type="email" placeholder="email@email.com"
+      /></label>
+      <label for="tel"
+        >Telefono
+        <input
+          pattern="^([+][0-9]{1,4})?[0-9]{9}?+$"
+          id="tel"
+          required
+          name="input4"
+          type="tel"
+          placeholder="+34 666 777 888"
+      /></label>
+      <label for="url"
+        >URL <input required name="input5" type="url" name="" id="url" placeholder="http://dominio.com"
+      /></label>
+      <label for="edad"
+        >Edad <input required name="input6" type="number" name="" id="edad" max="100" min="18" placeholder="18"
+      /></label>
+      <label for="fecNac"
+        >Fecha de nacimiento<input
+          required
+          name="input7"
+          type="text"
+          name="inputfecha"
+          id="fecNac"
+          placeholder="DD/MM/YYYY"
+          onfocus="(this.type='date')"
+      /></label>
+      <label for="mensaje">Mensaje </label>
+      <textarea
+        name=""
+        id="mensaje"
+        placeholder="describe brevemente en menos de 300 caracteres"
+        maxlength="300"
+      ></textarea>
+      <input required name="input8" type="submit" value="Enviar datos" />
+    </form>
+  </body>
+</html>
