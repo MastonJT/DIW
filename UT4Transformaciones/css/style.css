@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blueBlock {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+}
+
+#boton1:hover + div {
+  translate: 400px 200px;
+  transition-duration: 2s;
+}
+
+#boton2 + div {
+  margin: 0 auto;
+}
+#boton2:hover + div {
+  scale: 3.5 1;
+  transition-duration: 2s;
+}
+
+#boton3:hover + div {
+  transform: skew(-45deg, 15deg);
+  transition-duration: 2s;
+}
+
+#boton4:hover + div {
+  transform: rotate(180deg);
+  transition-duration: 2s;
+}
+
+#boton5:hover + div {
+  transform: rotate(45deg) scale(1.2) translate(400px, -600px);
+  transition-duration: 2s;
+}
