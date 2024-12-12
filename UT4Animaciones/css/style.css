@@ -63,6 +63,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 body {
@@ -88,7 +89,7 @@ body {
   height: 100px;
   transform-style: preserve-3d;
   transition: 2.5s ease-in-out;
-  transition-delay: calc(0.25s * var(--i));
+  transition-delay: calc(0.25s * var(--j));
 }
 
 .text span {
@@ -111,15 +112,82 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: steelblue;
+  background: linear-gradient(navy, blue);
   transform-origin: left;
   transform: rotateY(90deg) translateX(-50px);
 }
 
-.text:last-child span {
+/* .text:last-child span {
+  background: linear-gradient(yellow, brown);
+} */
+
+/* .text:last-child::before {
+  background: linear-gradient(yellow, brown);
+} */
+
+h2 {
+  color: aliceblue;
+  position: absolute;
+  top: 100px;
+  font-size: 2em;
+  transition: 0.5s;
+  text-shadow: 0 0 20px aliceblue, 0 0 50px aliceblue;
+}
+
+h2::after {
+  content: " 2025!";
+}
+
+h2:hover {
+  transition: 1s;
+  color: blanchedalmond;
+  text-shadow: 0 0 20px blanchedalmond, 0 0 50px blanchedalmond;
+  /* transform: rotate(360deg); */
+  font-size: 3rem;
+}
+h2:hover::after {
+  /* font-size: 3em; */
+  text-shadow: 0 0 20px yellow, 0 0 50px orange;
+  transition-property: color(gold);
+  transition-delay: 0.25s;
+  transition-duration: 1.5s;
+}
+
+h2:hover + .container .text {
+  transform: rotateX(calc(630deg));
+}
+h2:hover + .container .text span {
+  transition-delay: calc(0.25s * var(--j));
+}
+
+h2:hover + .container .text:last-child span {
+  background: linear-gradient(yellow, brown);
+  color: red;
+}
+h2:hover + .container .text:last-child::before {
   background: linear-gradient(yellow, brown);
 }
 
-.text:last-child::before {
-  background: linear-gradient(yellow, brown);
+h2:hover + .container .text1 span {
+  background: linear-gradient(lightgreen, darkgreen);
+  color: red;
+}
+h2:hover + .container .text1::before {
+  background: linear-gradient(lightgreen, darkgreen);
+}
+
+h2:hover + .container .text2 span {
+  background: linear-gradient(lightblue, navy);
+  color: red;
+}
+h2:hover + .container .text2::before {
+  background: linear-gradient(lightblue, navy);
+}
+
+h2:hover + .container .text3 span {
+  background: linear-gradient(pink, purple);
+  color: red;
+}
+h2:hover + .container .text3::before {
+  background: linear-gradient(pink, purple);
 }
