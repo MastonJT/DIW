@@ -17,51 +17,53 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">TechLearn</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dark">
-              <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Contacto</a>
-            </li>
-            <li class="nav-item dropdown">
-              <button
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                href="#"
-              >
-                Más
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
-                <li><a class="dropdown-item" href="#">Horarios</a></li>
-              </ul>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">TechLearn</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dark">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <button
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                >
+                  Más
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                  <li><a class="dropdown-item" href="#">Horarios</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="container">
+      </nav>
+    </header>
+    <main class="container">
       <div id="carousel" class="carousel slide">
         <div class="carousel-indicators">
           <button
@@ -74,14 +76,13 @@
           ></button>
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
-
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
               src="https://images.pexels.com/photos/19439122/pexels-photo-19439122/free-photo-of-ciudad-punto-de-referencia-luces-noche.jpeg"
               class="d-block w-100"
               alt="madrasahNoite"
-              style="height: 800px"
+              style="height: 50rem"
             />
           </div>
           <div class="carousel-item" id="carSize">
@@ -89,7 +90,7 @@
               src="https://images.pexels.com/photos/19227946/pexels-photo-19227946/free-photo-of-punto-de-referencia-verano-edificio-jardin.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               class="d-block w-100"
               alt="madrasahPlantas"
-              style="height: 800px"
+              style="height: 50rem"
             />
           </div>
         </div>
@@ -102,6 +103,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
