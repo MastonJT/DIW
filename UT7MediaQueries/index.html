@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios Media Queries</title>
+    <style>
+      /* 1 */
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      @media (min-width: 1025px) {
+        body {
+          background-color: blue;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        body {
+          background-color: green;
+        }
+      }
+
+      @media (max-width: 767px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      /* 2 */
+      .mensaje {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      @media (max-width: 767px) {
+        .mensaje {
+          display: none;
+        }
+      }
+
+      /* 3 */
+      h1 {
+        font-size: 24px;
+      }
+
+      @media (max-width: 1200px) {
+        h1 {
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        h1 {
+          font-size: 14px;
+        }
+      }
+
+      /* 4 */
+      .container {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .columna {
+        flex: 1;
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid black;
+      }
+
+      @media (max-width: 1024px) {
+        .container {
+          flex-wrap: wrap;
+        }
+        .columna {
+          width: 48%;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .container {
+          flex-direction: column;
+        }
+        .columna {
+          width: 100%;
+        }
+      }
+
+      /* 5 */
+      .menu ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+      }
+
+      .menu li {
+        margin: 10px;
+      }
+
+      .menu a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+      }
+
+      @media (max-width: 767px) {
+        .menu ul {
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mensaje">Este mensaje solo se verá en pantallas grandes.</div>
+
+    <h1>Ejercicios Media Queries</h1>
+
+    <div class="container">
+      <div class="columna">Columna 1</div>
+      <div class="columna">Columna 2</div>
+      <div class="columna">Columna 3</div>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
